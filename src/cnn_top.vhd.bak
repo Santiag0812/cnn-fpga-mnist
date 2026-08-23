@@ -1,0 +1,381 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.package_cnn.all;
+
+entity cnn_top is
+    port(
+        clk         : in  std_logic;
+        rst         : in  std_logic;
+        start       : in  std_logic;
+
+        -- Carga externa de imagen 28x28, un pixel por ciclo.
+        img_we      : in  std_logic;
+        img_addr    : in  integer range 0 to IMG_DEPTH-1;
+        img_din     : in  s8_t;
+
+        done        : out std_logic;
+        digit_out   : out std_logic_vector(3 downto 0);
+        debug_state : out std_logic_vector(3 downto 0)
+    );
+end entity;
+
+architecture structural of cnn_top is
+    -- Control interno
+    type top_state_t is (
+        T_IDLE,
+        T_START_C1, T_WAIT_C1,
+        T_COPY_C1_ADDR, T_COPY_C1_WRITE,
+        T_START_P1, T_WAIT_P1,
+        T_COPY_P1_ADDR, T_COPY_P1_WRITE,
+        T_START_C2, T_WAIT_C2,
+        T_COPY_C2_ADDR, T_COPY_C2_WRITE,
+        T_START_P2, T_WAIT_P2,
+        T_COPY_P2_ADDR, T_COPY_P2_WRITE,
+        T_START_D1, T_WAIT_D1,
+        T_COPY_D1_ADDR, T_COPY_D1_WRITE,
+        T_START_LOGITS, T_WAIT_LOGITS,
+        T_READ_LOGITS_ADDR, T_READ_LOGITS_SAVE,
+        T_ARGMAX,
+        T_DONE
+    );
+    signal state : top_state_t := T_IDLE;
+    signal copy_idx : integer range 0 to C1_DEPTH-1 := 0;
+
+    -- Conv1
+    signal c1_start, c1_busy, c1_done : std_logic := '0';
+    signal c1_out_addr : integer range 0 to C1_DEPTH-1 := 0;
+    signal c1_out_data : s8_t := (others => '0');
+    signal c1_dbg_acc  : acc_t;
+    signal c1_dbg_oc   : integer range 0 to CONV1_OUT_CH-1;
+    signal c1_dbg_x    : integer range 0 to CONV1_OUT_W-1;
+    signal c1_dbg_y    : integer range 0 to CONV1_OUT_H-1;
+
+    -- Pool1
+    signal p1_start, p1_busy, p1_done : std_logic := '0';
+    signal p1_in_we   : std_logic := '0';
+    signal p1_in_addr : integer range 0 to C1_DEPTH-1 := 0;
+    signal p1_in_data : s8_t := (others => '0');
+    signal p1_out_addr : integer range 0 to P1_DEPTH-1 := 0;
+    signal p1_out_data : s8_t := (others => '0');
+    signal p1_dbg_x : integer range 0 to POOL1_OUT_W-1;
+    signal p1_dbg_y : integer range 0 to POOL1_OUT_H-1;
+
+    -- Conv2
+    signal c2_start, c2_busy, c2_done : std_logic := '0';
+    signal c2_in_we   : std_logic := '0';
+    signal c2_in_addr : integer range 0 to P1_DEPTH-1 := 0;
+    signal c2_in_data : s8_t := (others => '0');
+    signal c2_out_addr : integer range 0 to C2_DEPTH-1 := 0;
+    signal c2_out_data : s8_t := (others => '0');
+    signal c2_dbg_acc  : acc_t;
+    signal c2_dbg_oc   : integer range 0 to CONV2_OUT_CH-1;
+    signal c2_dbg_x    : integer range 0 to CONV2_OUT_W-1;
+    signal c2_dbg_y    : integer range 0 to CONV2_OUT_H-1;
+
+    -- Pool2
+    signal p2_start, p2_busy, p2_done : std_logic := '0';
+    signal p2_in_we   : std_logic := '0';
+    signal p2_in_addr : integer range 0 to C2_DEPTH-1 := 0;
+    signal p2_in_data : s8_t := (others => '0');
+    signal p2_out_addr : integer range 0 to P2_DEPTH-1 := 0;
+    signal p2_out_data : s8_t := (others => '0');
+    signal p2_dbg_x : integer range 0 to POOL2_OUT_W-1;
+    signal p2_dbg_y : integer range 0 to POOL2_OUT_H-1;
+
+    -- Dense1
+    signal d1_start, d1_busy, d1_done : std_logic := '0';
+    signal d1_in_we   : std_logic := '0';
+    signal d1_in_addr : integer range 0 to P2_DEPTH-1 := 0;
+    signal d1_in_data : s8_t := (others => '0');
+    signal d1_out_addr : integer range 0 to DENSE1_SIZE-1 := 0;
+    signal d1_out_data : s8_t := (others => '0');
+    signal d1_dbg_acc : acc_t;
+    signal d1_dbg_neuron : integer range 0 to DENSE1_SIZE-1;
+
+    -- Logits
+    signal lg_start, lg_busy, lg_done : std_logic := '0';
+    signal lg_in_we   : std_logic := '0';
+    signal lg_in_addr : integer range 0 to DENSE1_SIZE-1 := 0;
+    signal lg_in_data : s8_t := (others => '0');
+    signal lg_out_addr : integer range 0 to LOGITS_SIZE-1 := 0;
+    signal lg_out_data : s8_t := (others => '0');
+    signal lg_dbg_acc : acc_t;
+    signal lg_dbg_neuron : integer range 0 to LOGITS_SIZE-1;
+
+    signal logits_local : s8_array_t(0 to 9) := (others => (others => '0'));
+    signal digit_int : std_logic_vector(3 downto 0);
+
+begin
+    -- ================================================================
+    -- Instancias estructurales visibles en RTL Viewer
+    -- ================================================================
+
+    u_conv1 : entity work.conv3x3_layer_struct
+        generic map(
+            IN_W => 28, IN_H => 28, IN_CH => 1, OUT_CH => 8,
+            SHIFT_VALUE => SHIFT_CONV1,
+            WEIGHT_FILE => "mem/conv1_kernel_int8.hex",
+            BIAS_FILE   => "mem/conv1_bias_int8.hex"
+        )
+        port map(
+            clk => clk, rst => rst, start => c1_start, busy => c1_busy, done => c1_done,
+            in_we => img_we, in_addr => img_addr, in_din => img_din,
+            out_rd_addr => c1_out_addr, out_dout => c1_out_data,
+            dbg_oc => c1_dbg_oc, dbg_x => c1_dbg_x, dbg_y => c1_dbg_y, dbg_acc => c1_dbg_acc
+        );
+
+    u_pool1 : entity work.maxpool_layer_struct
+        generic map(IN_W => 26, IN_H => 26, CH => 8)
+        port map(
+            clk => clk, rst => rst, start => p1_start, busy => p1_busy, done => p1_done,
+            in_we => p1_in_we, in_addr => p1_in_addr, in_din => p1_in_data,
+            out_rd_addr => p1_out_addr, out_dout => p1_out_data,
+            dbg_x => p1_dbg_x, dbg_y => p1_dbg_y
+        );
+
+    u_conv2 : entity work.conv3x3_layer_struct
+        generic map(
+            IN_W => 13, IN_H => 13, IN_CH => 8, OUT_CH => 16,
+            SHIFT_VALUE => SHIFT_CONV2,
+            WEIGHT_FILE => "mem/conv2_kernel_int8.hex",
+            BIAS_FILE   => "mem/conv2_bias_int8.hex"
+        )
+        port map(
+            clk => clk, rst => rst, start => c2_start, busy => c2_busy, done => c2_done,
+            in_we => c2_in_we, in_addr => c2_in_addr, in_din => c2_in_data,
+            out_rd_addr => c2_out_addr, out_dout => c2_out_data,
+            dbg_oc => c2_dbg_oc, dbg_x => c2_dbg_x, dbg_y => c2_dbg_y, dbg_acc => c2_dbg_acc
+        );
+
+    u_pool2 : entity work.maxpool_layer_struct
+        generic map(IN_W => 11, IN_H => 11, CH => 16)
+        port map(
+            clk => clk, rst => rst, start => p2_start, busy => p2_busy, done => p2_done,
+            in_we => p2_in_we, in_addr => p2_in_addr, in_din => p2_in_data,
+            out_rd_addr => p2_out_addr, out_dout => p2_out_data,
+            dbg_x => p2_dbg_x, dbg_y => p2_dbg_y
+        );
+
+    u_dense1 : entity work.dense_layer_struct
+        generic map(
+            IN_SIZE => 400, OUT_SIZE => 32,
+            SHIFT_VALUE => SHIFT_DENSE1,
+            APPLY_RELU => true,
+            WEIGHT_FILE => "mem/dense1_kernel_int8.hex",
+            BIAS_FILE   => "mem/dense1_bias_int8.hex"
+        )
+        port map(
+            clk => clk, rst => rst, start => d1_start, busy => d1_busy, done => d1_done,
+            in_we => d1_in_we, in_addr => d1_in_addr, in_din => d1_in_data,
+            out_rd_addr => d1_out_addr, out_dout => d1_out_data,
+            dbg_neuron => d1_dbg_neuron, dbg_acc => d1_dbg_acc
+        );
+
+    u_logits : entity work.dense_layer_struct
+        generic map(
+            IN_SIZE => 32, OUT_SIZE => 10,
+            SHIFT_VALUE => SHIFT_LOGITS,
+            APPLY_RELU => false,
+            WEIGHT_FILE => "mem/logits_kernel_int8.hex",
+            BIAS_FILE   => "mem/logits_bias_int8.hex"
+        )
+        port map(
+            clk => clk, rst => rst, start => lg_start, busy => lg_busy, done => lg_done,
+            in_we => lg_in_we, in_addr => lg_in_addr, in_din => lg_in_data,
+            out_rd_addr => lg_out_addr, out_dout => lg_out_data,
+            dbg_neuron => lg_dbg_neuron, dbg_acc => lg_dbg_acc
+        );
+
+    u_argmax : entity work.argmax10
+        port map(
+            logit0 => logits_local(0), logit1 => logits_local(1),
+            logit2 => logits_local(2), logit3 => logits_local(3),
+            logit4 => logits_local(4), logit5 => logits_local(5),
+            logit6 => logits_local(6), logit7 => logits_local(7),
+            logit8 => logits_local(8), logit9 => logits_local(9),
+            digit  => digit_int
+        );
+
+    digit_out <= digit_int;
+    done <= '1' when state = T_DONE else '0';
+
+    process(state)
+    begin
+        case state is
+            when T_IDLE         => debug_state <= ST_IDLE;
+            when T_START_C1|T_WAIT_C1|T_COPY_C1_ADDR|T_COPY_C1_WRITE => debug_state <= ST_CONV1;
+            when T_START_P1|T_WAIT_P1|T_COPY_P1_ADDR|T_COPY_P1_WRITE => debug_state <= ST_POOL1;
+            when T_START_C2|T_WAIT_C2|T_COPY_C2_ADDR|T_COPY_C2_WRITE => debug_state <= ST_CONV2;
+            when T_START_P2|T_WAIT_P2|T_COPY_P2_ADDR|T_COPY_P2_WRITE => debug_state <= ST_POOL2;
+            when T_START_D1|T_WAIT_D1|T_COPY_D1_ADDR|T_COPY_D1_WRITE => debug_state <= ST_DENSE1;
+            when T_START_LOGITS|T_WAIT_LOGITS|T_READ_LOGITS_ADDR|T_READ_LOGITS_SAVE => debug_state <= ST_LOGITS;
+            when T_ARGMAX       => debug_state <= ST_ARGMAX;
+            when T_DONE         => debug_state <= ST_DONE;
+        end case;
+    end process;
+
+    -- ================================================================
+    -- FSM estructural de integración: no calcula capas; solo arranca,
+    -- espera y copia memorias entre bloques.
+    -- ================================================================
+    process(clk)
+    begin
+        if rising_edge(clk) then
+            if rst = '1' then
+                state <= T_IDLE;
+                copy_idx <= 0;
+                c1_start <= '0'; p1_start <= '0'; c2_start <= '0'; p2_start <= '0'; d1_start <= '0'; lg_start <= '0';
+                p1_in_we <= '0'; c2_in_we <= '0'; p2_in_we <= '0'; d1_in_we <= '0'; lg_in_we <= '0';
+            else
+                c1_start <= '0'; p1_start <= '0'; c2_start <= '0'; p2_start <= '0'; d1_start <= '0'; lg_start <= '0';
+                p1_in_we <= '0'; c2_in_we <= '0'; p2_in_we <= '0'; d1_in_we <= '0'; lg_in_we <= '0';
+
+                case state is
+                    when T_IDLE =>
+                        if start = '1' then
+                            state <= T_START_C1;
+                        end if;
+
+                    when T_START_C1 =>
+                        c1_start <= '1';
+                        state <= T_WAIT_C1;
+                    when T_WAIT_C1 =>
+                        if c1_done = '1' then
+                            copy_idx <= 0;
+                            state <= T_COPY_C1_ADDR;
+                        end if;
+                    when T_COPY_C1_ADDR =>
+                        c1_out_addr <= copy_idx;
+                        p1_in_addr <= copy_idx;
+                        state <= T_COPY_C1_WRITE;
+                    when T_COPY_C1_WRITE =>
+                        p1_in_data <= c1_out_data;
+                        p1_in_we <= '1';
+                        if copy_idx < C1_DEPTH-1 then
+                            copy_idx <= copy_idx + 1;
+                            state <= T_COPY_C1_ADDR;
+                        else
+                            state <= T_START_P1;
+                        end if;
+
+                    when T_START_P1 =>
+                        p1_start <= '1';
+                        state <= T_WAIT_P1;
+                    when T_WAIT_P1 =>
+                        if p1_done = '1' then
+                            copy_idx <= 0;
+                            state <= T_COPY_P1_ADDR;
+                        end if;
+                    when T_COPY_P1_ADDR =>
+                        p1_out_addr <= copy_idx;
+                        c2_in_addr <= copy_idx;
+                        state <= T_COPY_P1_WRITE;
+                    when T_COPY_P1_WRITE =>
+                        c2_in_data <= p1_out_data;
+                        c2_in_we <= '1';
+                        if copy_idx < P1_DEPTH-1 then
+                            copy_idx <= copy_idx + 1;
+                            state <= T_COPY_P1_ADDR;
+                        else
+                            state <= T_START_C2;
+                        end if;
+
+                    when T_START_C2 =>
+                        c2_start <= '1';
+                        state <= T_WAIT_C2;
+                    when T_WAIT_C2 =>
+                        if c2_done = '1' then
+                            copy_idx <= 0;
+                            state <= T_COPY_C2_ADDR;
+                        end if;
+                    when T_COPY_C2_ADDR =>
+                        c2_out_addr <= copy_idx;
+                        p2_in_addr <= copy_idx;
+                        state <= T_COPY_C2_WRITE;
+                    when T_COPY_C2_WRITE =>
+                        p2_in_data <= c2_out_data;
+                        p2_in_we <= '1';
+                        if copy_idx < C2_DEPTH-1 then
+                            copy_idx <= copy_idx + 1;
+                            state <= T_COPY_C2_ADDR;
+                        else
+                            state <= T_START_P2;
+                        end if;
+
+                    when T_START_P2 =>
+                        p2_start <= '1';
+                        state <= T_WAIT_P2;
+                    when T_WAIT_P2 =>
+                        if p2_done = '1' then
+                            copy_idx <= 0;
+                            state <= T_COPY_P2_ADDR;
+                        end if;
+                    when T_COPY_P2_ADDR =>
+                        p2_out_addr <= copy_idx;
+                        d1_in_addr <= copy_idx;
+                        state <= T_COPY_P2_WRITE;
+                    when T_COPY_P2_WRITE =>
+                        d1_in_data <= p2_out_data;
+                        d1_in_we <= '1';
+                        if copy_idx < P2_DEPTH-1 then
+                            copy_idx <= copy_idx + 1;
+                            state <= T_COPY_P2_ADDR;
+                        else
+                            state <= T_START_D1;
+                        end if;
+
+                    when T_START_D1 =>
+                        d1_start <= '1';
+                        state <= T_WAIT_D1;
+                    when T_WAIT_D1 =>
+                        if d1_done = '1' then
+                            copy_idx <= 0;
+                            state <= T_COPY_D1_ADDR;
+                        end if;
+                    when T_COPY_D1_ADDR =>
+                        d1_out_addr <= copy_idx;
+                        lg_in_addr <= copy_idx;
+                        state <= T_COPY_D1_WRITE;
+                    when T_COPY_D1_WRITE =>
+                        lg_in_data <= d1_out_data;
+                        lg_in_we <= '1';
+                        if copy_idx < DENSE1_SIZE-1 then
+                            copy_idx <= copy_idx + 1;
+                            state <= T_COPY_D1_ADDR;
+                        else
+                            state <= T_START_LOGITS;
+                        end if;
+
+                    when T_START_LOGITS =>
+                        lg_start <= '1';
+                        state <= T_WAIT_LOGITS;
+                    when T_WAIT_LOGITS =>
+                        if lg_done = '1' then
+                            copy_idx <= 0;
+                            state <= T_READ_LOGITS_ADDR;
+                        end if;
+                    when T_READ_LOGITS_ADDR =>
+                        lg_out_addr <= copy_idx;
+                        state <= T_READ_LOGITS_SAVE;
+                    when T_READ_LOGITS_SAVE =>
+                        logits_local(copy_idx) <= lg_out_data;
+                        if copy_idx < LOGITS_SIZE-1 then
+                            copy_idx <= copy_idx + 1;
+                            state <= T_READ_LOGITS_ADDR;
+                        else
+                            state <= T_ARGMAX;
+                        end if;
+
+                    when T_ARGMAX =>
+                        state <= T_DONE;
+
+                    when T_DONE =>
+                        if start = '0' then
+                            state <= T_IDLE;
+                        end if;
+                end case;
+            end if;
+        end if;
+    end process;
+end architecture;

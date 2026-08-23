@@ -1,0 +1,11 @@
+test_id,mnist_index,label,hex_file,preview_png
+0,0,7,img_000_label_7.hex,img_000_label_7.png
+1,1,2,img_001_label_2.hex,img_001_label_2.png
+2,2,1,img_002_label_1.hex,img_002_label_1.png
+3,3,0,img_003_label_0.hex,img_003_label_0.png
+4,4,4,img_004_label_4.hex,img_004_label_4.png
+5,5,1,img_005_label_1.hex,img_005_label_1.png
+6,6,4,img_006_label_4.hex,img_006_label_4.png
+7,7,9,img_007_label_9.hex,img_007_label_9.png
+8,8,5,img_008_label_5.hex,img_008_label_5.png
+9,9,9,img_009_label_9.hex,img_009_label_9.png

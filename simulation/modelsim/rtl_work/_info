@@ -1,0 +1,454 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/simulation/modelsim
+Eargmax10
+Z1 w1779766713
+Z2 DPx4 work 11 package_cnn 0 22 UFDUi[I]k5:LCjX??AEOX0
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/argmax10.vhd
+Z7 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/argmax10.vhd
+l0
+L6
+VK7zzXaOB6nOK>z3g:QoWE0
+!s100 M>md`WAU7U>R44<F]D>zo3
+Z8 OV;C;10.3d;59
+31
+Z9 !s110 1780024698
+!i10b 1
+Z10 !s108 1780024698.330000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/argmax10.vhd|
+Z12 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/argmax10.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1
+Astructural_rtl
+R2
+R3
+R4
+R5
+Z15 DEx4 work 8 argmax10 0 22 K7zzXaOB6nOK>z3g:QoWE0
+l23
+L22
+VSfZZMhGDE[XE@SPZ4b8IP0
+!s100 iXaCO`2CG6Bed;B:LQ65B3
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecnn_top
+Z16 w1779769515
+R2
+R3
+R4
+R5
+R0
+Z17 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/cnn_top.vhd
+Z18 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/cnn_top.vhd
+l0
+L6
+VY;1_1N0R3zVLWlz3CPiMj1
+!s100 ?cePMVak86l0cmk0MXYhi1
+R8
+31
+Z19 !s110 1780024700
+!i10b 1
+Z20 !s108 1780024700.888000
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/cnn_top.vhd|
+Z22 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/cnn_top.vhd|
+!i113 1
+R13
+R14
+Astructural
+R15
+Z23 DEx4 work 18 dense_layer_struct 0 22 Elj9DF`4^E?FjbOYDo_QN0
+Z24 DEx4 work 20 maxpool_layer_struct 0 22 <J0ci=cFADQUf`k?n19ob0
+Z25 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+Z26 DEx4 work 20 conv3x3_layer_struct 0 22 7@W8LW5F:9T@;llz<_HY_2
+Z27 DEx4 work 22 controlador_cnn_struct 0 22 bVGVmTSNDO?XCa<J;e_Z73
+R2
+R3
+R4
+R5
+DEx4 work 7 cnn_top 0 22 Y;1_1N0R3zVLWlz3CPiMj1
+l130
+L23
+Vi0^eVB]oFeUc`oJGKVCTO2
+!s100 =OI:h[@f;F8NHTKVVQY;>0
+R8
+31
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
+Econtrolador_cnn_struct
+Z28 w1779769517
+R2
+R3
+R4
+R5
+R0
+Z29 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/controlador_cnn_struct.vhd
+Z30 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/controlador_cnn_struct.vhd
+l0
+L6
+VbVGVmTSNDO?XCa<J;e_Z73
+!s100 eXCHCKgSU=dIjjcj1]dmN2
+R8
+31
+R9
+!i10b 1
+Z31 !s108 1780024698.836000
+Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/controlador_cnn_struct.vhd|
+Z33 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/controlador_cnn_struct.vhd|
+!i113 1
+R13
+R14
+Astructural_rtl
+R2
+R3
+R4
+R5
+R27
+l108
+L64
+Ve5MOZgJm6Iaahl]NJI0F61
+!s100 X_=]15S6:nDN6PBD_3P2m1
+R8
+31
+R9
+!i10b 1
+R31
+R32
+R33
+!i113 1
+R13
+R14
+Econv3x3_layer_struct
+Z34 w1779766740
+R2
+R25
+R3
+R4
+R5
+R0
+Z35 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/conv3x3_layer_struct.vhd
+Z36 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/conv3x3_layer_struct.vhd
+l0
+L8
+V7@W8LW5F:9T@;llz<_HY_2
+!s100 :X;;Y]3hkAdb9g7?`jD4e2
+R8
+31
+Z37 !s110 1780024699
+!i10b 1
+Z38 !s108 1780024699.350000
+Z39 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/conv3x3_layer_struct.vhd|
+Z40 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/conv3x3_layer_struct.vhd|
+!i113 1
+R13
+R14
+Astructural
+Z41 DEx4 work 9 relu_unit 0 22 44g?8ZLQeRZcI9_TP[M:N0
+Z42 DEx4 work 8 mac_unit 0 22 8e;4XSabOAPoYiOUM0<2l0
+R2
+R25
+R3
+R4
+R5
+R26
+l106
+L42
+V9PI_1L1J`:[ZP7mPO^?K53
+!s100 `7_ZJbZ]3=GegFgHnHnNM1
+R8
+31
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 1
+R13
+R14
+Edense_layer_struct
+Z43 w1779766752
+R2
+R25
+R3
+R4
+R5
+R0
+Z44 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/dense_layer_struct.vhd
+Z45 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/dense_layer_struct.vhd
+l0
+L8
+VElj9DF`4^E?FjbOYDo_QN0
+!s100 ?jn7f:n_WKSP6<0]NkTgK2
+R8
+31
+R19
+!i10b 1
+Z46 !s108 1780024700.382000
+Z47 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/dense_layer_struct.vhd|
+Z48 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/dense_layer_struct.vhd|
+!i113 1
+R13
+R14
+Astructural
+R42
+R2
+R25
+R3
+R4
+R5
+R23
+l80
+L36
+VJRlV9n1`^hl<g]FF;S>7>1
+!s100 e52J1lHCCIT;A6c36Z?@U2
+R8
+31
+R19
+!i10b 1
+R46
+R47
+R48
+!i113 1
+R13
+R14
+Emac_unit
+R1
+R2
+R3
+R4
+R5
+R0
+Z49 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/mac_unit.vhd
+Z50 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/mac_unit.vhd
+l0
+L6
+V8e;4XSabOAPoYiOUM0<2l0
+!s100 6hz^SHb4O27`zf?6;M4l?2
+R8
+31
+Z51 !s110 1780024696
+!i10b 1
+Z52 !s108 1780024696.787000
+Z53 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/mac_unit.vhd|
+Z54 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/mac_unit.vhd|
+!i113 1
+R13
+R14
+Astructural_rtl
+R2
+R3
+R4
+R5
+R42
+l20
+L18
+V7ZUY?Qo34_giJi]OFlV2z3
+!s100 XoGCd<diMj2^@fiiZ9XHQ3
+R8
+31
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R13
+R14
+Emaxpool2x2
+R1
+R2
+R3
+R4
+R5
+R0
+Z55 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool2x2.vhd
+Z56 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool2x2.vhd
+l0
+L6
+VDiFd]1@1LhnnH0bbmNlE?3
+!s100 LfYX8^nGTh9N^9^>46Y970
+R8
+31
+Z57 !s110 1780024697
+!i10b 1
+Z58 !s108 1780024697.844000
+Z59 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool2x2.vhd|
+Z60 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool2x2.vhd|
+!i113 1
+R13
+R14
+Astructural_rtl
+R2
+R3
+R4
+R5
+Z61 DEx4 work 10 maxpool2x2 0 22 DiFd]1@1LhnnH0bbmNlE?3
+l18
+L16
+VVjelKiCSSn?hBUeV`YHSb2
+!s100 TW3Ud@Gl6zSFaUBeV_]cP1
+R8
+31
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R13
+R14
+Emaxpool_layer_struct
+Z62 w1779767934
+R2
+R3
+R4
+R5
+R0
+Z63 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool_layer_struct.vhd
+Z64 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool_layer_struct.vhd
+l0
+L6
+V<J0ci=cFADQUf`k?n19ob0
+!s100 OUzD?OY6^G`@>:OMjk^F>0
+R8
+31
+R37
+!i10b 1
+Z65 !s108 1780024699.846000
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool_layer_struct.vhd|
+Z67 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool_layer_struct.vhd|
+!i113 1
+R13
+R14
+Astructural
+R61
+R2
+R3
+R4
+R5
+R24
+l68
+L31
+V>;<FY`YX[aR9oAM4OHhI61
+!s100 C_D]?0NRHW^0CcLH:LGL83
+R8
+31
+R37
+!i10b 1
+R65
+R66
+R67
+!i113 1
+R13
+R14
+Ppackage_cnn
+R3
+R4
+R5
+R1
+R0
+Z68 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/package_cnn.vhd
+Z69 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/package_cnn.vhd
+l0
+L5
+VUFDUi[I]k5:LCjX??AEOX0
+!s100 95<oS2`;3B>6fBikod7>73
+R8
+31
+b1
+R51
+!i10b 1
+Z70 !s108 1780024696.598000
+Z71 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/package_cnn.vhd|
+Z72 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/package_cnn.vhd|
+!i113 1
+R13
+R14
+Bbody
+R2
+R3
+R4
+R5
+l0
+L73
+VdlTFf730?f7;g^FCfJYc:0
+!s100 hUDcJ5mQ^EIleEBH;giki2
+R8
+31
+R51
+!i10b 1
+R70
+R71
+R72
+!i113 1
+R13
+R14
+nbody
+Erelu_unit
+R1
+R2
+R3
+R4
+R5
+R0
+Z73 8C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/relu_unit.vhd
+Z74 FC:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/relu_unit.vhd
+l0
+L6
+V44g?8ZLQeRZcI9_TP[M:N0
+!s100 dJhJD]1SJGgN_i`<EOWfK1
+R8
+31
+R57
+!i10b 1
+Z75 !s108 1780024697.335000
+Z76 !s90 -reportprogress|300|-93|-work|work|C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/relu_unit.vhd|
+Z77 !s107 C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/relu_unit.vhd|
+!i113 1
+R13
+R14
+Astructural_rtl
+R2
+R3
+R4
+R5
+R41
+l17
+L16
+V@N`<5KCQD=6zm9@8GBCgT2
+!s100 06PT5]8]WVFY3;a4:V14[2
+R8
+31
+R57
+!i10b 1
+R75
+R76
+R77
+!i113 1
+R13
+R14

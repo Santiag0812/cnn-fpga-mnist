@@ -1,0 +1,4409 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do Parcial_CNN_FPGA_ESTRUCTURAL_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/package_cnn.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:16 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:18:16 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/mac_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:16 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:18:17 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/relu_unit.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:17 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:18:17 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool2x2.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:17 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:18:18 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/argmax10.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:18 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:18:18 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/controlador_cnn_struct.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:18 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:18:19 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/conv3x3_layer_struct.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:19 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:18:19 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool_layer_struct.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:19 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:18:20 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/dense_layer_struct.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:20 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:18:20 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/cnn_top.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:18:20 on May 28,2026
+# vcom -reportprogress 300 -93 -work work C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:18:21 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+cd C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA
+# reading modelsim.ini
+do sim/run_drawn_image.do
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:21:18 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:18 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:21:18 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:18 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:21:18 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:18 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:21:19 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:19 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:21:19 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:19 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:21:20 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:20 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:21:20 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:20 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:21:21 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:21 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:21:21 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:21 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:21:22 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:21:22 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:21:22 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=7 -gMAX_CYCLES=3000000
+# vsim -gui "+altera" -l msim_transcript -do "Parcial_CNN_FPGA_ESTRUCTURAL_run_msim_rtl_vhdl.do" 
+# Start time: 22:21:22 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 7
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 7
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 9
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+# WARNING: No extended dataflow license exists
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# Error 31: Unable to unlink file "C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/work/_lib.qdb".
+# Error 31: Unable to unlink file "C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/work/_lib1_0.qdb".
+# Error 31: Unable to unlink file "C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA/work".
+# 
+# vlib work
+# ** Error: (vlib-35) Failed to create directory "work".
+# 
+# File exists. (errno = EEXIST)
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:53 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:36:53 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:53 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:36:53 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:53 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:36:54 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:54 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:36:54 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:54 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:36:55 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:55 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:36:55 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:55 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:36:56 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:36:56 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:36:57 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:57 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:36:58 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:36:58 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:36:58 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=8 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:36:59 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 8
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:03 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:38:03 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:03 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:38:03 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:03 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:38:04 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:04 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:38:04 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:04 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:38:05 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:05 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:38:05 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:05 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:38:06 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:06 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:38:06 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:06 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:38:07 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:07 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:38:07 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:07 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:38:08 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=6 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:38:09 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 6
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 6
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:38:56 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:38:57 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:57 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:38:57 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:57 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:38:58 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:58 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:38:58 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:58 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:38:59 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:59 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:38:59 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:38:59 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:39:00 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:39:00 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:39:00 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:39:00 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:39:01 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:39:01 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:39:01 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=9 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:39:03 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 9
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 9
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 9
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: RESULTADO: OK, prediccion correcta.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:20 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:40:20 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:20 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:40:21 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:21 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:40:21 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:21 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:40:22 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:22 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:40:22 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:22 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:40:23 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:23 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:40:23 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:23 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:40:24 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:24 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:40:24 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:24 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:40:25 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:40:25 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:40:25 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=9 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:40:26 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 9
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 9
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:54 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:41:54 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:54 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:41:55 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:55 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:41:55 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:55 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:41:56 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:41:56 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:41:57 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:57 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:41:57 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:57 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:41:58 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:58 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:41:58 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:58 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:41:59 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:41:59 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:41:59 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=0 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:42:00 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: RESULTADO: OK, prediccion correcta.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:52 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:42:52 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:52 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:42:52 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:52 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:42:53 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:53 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:42:53 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:53 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:42:54 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:54 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:42:54 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:54 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:42:55 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:55 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:42:55 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:55 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:42:56 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:42:56 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:42:56 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:42:57 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=5 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:42:58 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 5
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: RESULTADO: OK, prediccion correcta.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:47 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:44:47 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:47 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:44:48 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:48 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:44:48 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:48 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:44:48 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:48 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:44:49 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:49 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:44:49 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:49 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:44:50 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:50 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:44:50 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:50 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:44:51 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:51 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:44:51 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:51 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:44:52 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=3 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:44:53 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 3
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 3
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:14 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:48:14 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:14 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:48:14 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:14 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:48:15 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:48:15 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:48:15 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:48:16 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:16 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:48:16 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:16 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:48:17 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:48:17 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:48:18 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:48:18 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:48:18 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=2 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:48:19 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 2
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 2
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:06 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:49:06 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:06 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:49:07 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:07 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:49:07 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:07 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:49:08 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:08 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:49:08 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:08 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:49:09 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:09 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:49:09 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:09 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:49:10 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:10 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:49:10 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:10 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:49:11 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:49:11 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:49:11 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=4 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:49:12 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 4
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 4
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:50:15 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:50:16 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:16 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:50:16 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:16 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:50:17 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:50:17 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:50:17 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:50:18 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:18 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:50:18 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:18 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:50:19 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:19 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:50:19 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:50:19 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:50:19 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=9 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:50:20 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 9
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 9
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:14 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:53:15 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:53:15 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:53:15 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:15 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:53:16 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:16 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:53:16 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:16 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:53:16 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:16 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:53:17 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:53:17 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:17 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:53:18 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:18 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:53:18 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:18 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:53:18 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=9 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:53:19 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 9
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 9
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:53:56 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:56 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:53:57 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:57 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:53:57 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:57 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:53:58 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:58 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:53:58 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:58 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:53:59 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:59 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:53:59 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:53:59 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:54:00 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:00 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:54:00 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:00 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:54:01 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:01 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:54:02 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=9 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:54:03 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 9
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 9
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:42 on May 28,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 22:54:43 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:43 on May 28,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 22:54:43 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:43 on May 28,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 22:54:44 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:44 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 22:54:44 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:44 on May 28,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 22:54:45 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:45 on May 28,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 22:54:45 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:45 on May 28,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 22:54:46 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:46 on May 28,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 22:54:46 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:46 on May 28,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 22:54:47 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:47 on May 28,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 22:54:47 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:54:47 on May 28,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 22:54:48 on May 28,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=5 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 22:54:49 on May 28,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 5
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: RESULTADO: OK, prediccion correcta.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:19 on May 29,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 07:23:19 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:19 on May 29,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 07:23:20 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:20 on May 29,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 07:23:21 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:21 on May 29,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 07:23:21 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:21 on May 29,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 07:23:22 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:22 on May 29,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 07:23:22 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:22 on May 29,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 07:23:23 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:23 on May 29,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 07:23:23 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:23 on May 29,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 07:23:24 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:24 on May 29,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 07:23:25 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:23:25 on May 29,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 07:23:25 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=0 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 07:23:26 on May 29,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+do sim/run_drawn_image.do
+# transcript on
+# 
+# cd {C:/Users/santi/OneDrive/Escritorio/CNN_MNIST_ESTRUCTURAL_FPGA/CNN_MNIST_ESTRUCTURAL_FPGA}
+# reading modelsim.ini
+# 
+# if {[file exists work]} {
+#     vdel -lib work -all
+# }
+# 
+# vlib work
+# vmap work work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work work 
+# Modifying modelsim.ini
+# 
+# vcom -2008 src/package_cnn.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:42 on May 29,2026
+# vcom -reportprogress 300 -2008 src/package_cnn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package package_cnn
+# -- Compiling package body package_cnn
+# -- Loading package package_cnn
+# End time: 07:24:42 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/mac_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:42 on May 29,2026
+# vcom -reportprogress 300 -2008 src/mac_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity mac_unit
+# -- Compiling architecture structural_rtl of mac_unit
+# End time: 07:24:43 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/relu_unit.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:43 on May 29,2026
+# vcom -reportprogress 300 -2008 src/relu_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity relu_unit
+# -- Compiling architecture structural_rtl of relu_unit
+# End time: 07:24:43 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool2x2.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:43 on May 29,2026
+# vcom -reportprogress 300 -2008 src/maxpool2x2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool2x2
+# -- Compiling architecture structural_rtl of maxpool2x2
+# End time: 07:24:44 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/argmax10.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:44 on May 29,2026
+# vcom -reportprogress 300 -2008 src/argmax10.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity argmax10
+# -- Compiling architecture structural_rtl of argmax10
+# End time: 07:24:44 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/conv3x3_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:44 on May 29,2026
+# vcom -reportprogress 300 -2008 src/conv3x3_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity conv3x3_layer_struct
+# -- Compiling architecture structural of conv3x3_layer_struct
+# -- Loading entity mac_unit
+# -- Loading entity relu_unit
+# End time: 07:24:45 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/maxpool_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:45 on May 29,2026
+# vcom -reportprogress 300 -2008 src/maxpool_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity maxpool_layer_struct
+# -- Compiling architecture structural of maxpool_layer_struct
+# -- Loading entity maxpool2x2
+# End time: 07:24:45 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/dense_layer_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:45 on May 29,2026
+# vcom -reportprogress 300 -2008 src/dense_layer_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package package_cnn
+# -- Compiling entity dense_layer_struct
+# -- Compiling architecture structural of dense_layer_struct
+# -- Loading entity mac_unit
+# End time: 07:24:46 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 src/controlador_cnn_struct.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:46 on May 29,2026
+# vcom -reportprogress 300 -2008 src/controlador_cnn_struct.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity controlador_cnn_struct
+# -- Compiling architecture structural_rtl of controlador_cnn_struct
+# End time: 07:24:46 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 src/cnn_top.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:46 on May 29,2026
+# vcom -reportprogress 300 -2008 src/cnn_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package package_cnn
+# -- Compiling entity cnn_top
+# -- Compiling architecture structural of cnn_top
+# -- Loading entity controlador_cnn_struct
+# -- Loading package std_logic_textio
+# -- Loading entity conv3x3_layer_struct
+# -- Loading entity maxpool_layer_struct
+# -- Loading entity dense_layer_struct
+# -- Loading entity argmax10
+# End time: 07:24:47 on May 29,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 sim/tb_cnn_image_assert.vhd
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 07:24:47 on May 29,2026
+# vcom -reportprogress 300 -2008 sim/tb_cnn_image_assert.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Loading package ENV
+# -- Loading package package_cnn
+# -- Compiling entity tb_cnn_image_assert
+# -- Compiling architecture sim of tb_cnn_image_assert
+# -- Loading entity cnn_top
+# End time: 07:24:47 on May 29,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_cnn_image_assert -gIMAGE_FILE="sim/data/drawn_digit.hex" -gEXPECTED_DIGIT=0 -gMAX_CYCLES=3000000
+# vsim 
+# Start time: 07:24:49 on May 29,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading std.env(body)
+# Loading work.package_cnn(body)
+# Loading work.tb_cnn_image_assert(sim)
+# Loading work.cnn_top(structural)
+# Loading work.controlador_cnn_struct(structural_rtl)
+# Loading work.conv3x3_layer_struct(structural)
+# Loading work.mac_unit(structural_rtl)
+# Loading work.relu_unit(structural_rtl)
+# Loading work.maxpool_layer_struct(structural)
+# Loading work.maxpool2x2(structural_rtl)
+# Loading work.dense_layer_struct(structural)
+# Loading work.argmax10(structural_rtl)
+# 
+# add wave -divider "CONTROL GENERAL"
+# add wave -radix binary   sim:/tb_cnn_image_assert/clk
+# add wave -radix binary   sim:/tb_cnn_image_assert/rst
+# add wave -radix binary   sim:/tb_cnn_image_assert/start
+# add wave -radix binary   sim:/tb_cnn_image_assert/done
+# add wave -radix unsigned sim:/tb_cnn_image_assert/digit_out
+# add wave -radix unsigned sim:/tb_cnn_image_assert/debug_state
+# 
+# add wave -divider "CARGA DE IMAGEN"
+# add wave -radix binary   sim:/tb_cnn_image_assert/img_we
+# add wave -radix unsigned sim:/tb_cnn_image_assert/img_addr
+# add wave -radix signed   sim:/tb_cnn_image_assert/img_din
+# 
+# add wave -divider "CONTROL DE CAPAS"
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/c2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/p2_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/d1_done
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_start
+# add wave -radix binary sim:/tb_cnn_image_assert/dut/lg_done
+# 
+# add wave -divider "LOGITS Y ARGMAX"
+# add wave -radix signed   sim:/tb_cnn_image_assert/dut/logits_local
+# add wave -radix unsigned sim:/tb_cnn_image_assert/dut/digit_int
+# 
+# run -all
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: INICIO TEST CNN MNIST
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada: sim/data/drawn_digit.hex
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado: 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool2/U_MAXPOOL2X2
+# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_cnn_image_assert/dut/u_pool1/U_MAXPOOL2X2
+# ** Note: Cargando imagen en RAM de entrada...
+#    Time: 130 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Imagen cargada correctamente.
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Iniciando inferencia CNN...
+#    Time: 15830 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: FIN DE INFERENCIA
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito esperado : 0
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: Digito predicho : 5
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: debug_state     : 8
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Note: ==============================================
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# ** Error: ERROR: La CNN no reconocio correctamente la imagen.
+#    Time: 4953730 ns  Iteration: 0  Instance: /tb_cnn_image_assert
+# Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# Simulation Breakpoint: Break in ForLoop loop at sim/tb_cnn_image_assert.vhd line 136
+# MACRO ./sim/run_drawn_image.do PAUSED at line 57
+# End time: 08:03:52 on May 29,2026, Elapsed time: 0:39:03
+# Errors: 1, Warnings: 2

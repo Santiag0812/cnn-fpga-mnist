@@ -1,0 +1,82 @@
+PROYECTO CNN MNIST ESTRUCTURAL PARA QUARTUS / CYCLONE IV
+=========================================================
+
+Este paquete reemplaza el diseño monolitico por un diseño ESTRUCTURAL.
+La idea es que la profesora pueda abrir/probar cada bloque por separado,
+por ejemplo Conv1 con un testbench y asserts.
+
+ARCHIVOS PRINCIPALES
+--------------------
+src/package_cnn.vhd              Tipos, constantes y funciones de cuantizacion.
+src/mac_unit.vhd                 Bloque MAC: multiplicar y acumular.
+src/relu_unit.vhd                ReLU: max(0,x) + shift + saturacion.
+src/maxpool2x2.vhd               Maximo de 4 datos.
+src/argmax10.vhd                 Escoge la clase de mayor logit.
+src/conv3x3_layer_struct.vhd     Capa convolucional 3x3 generica, con MAC y ReLU instanciados.
+src/maxpool_layer_struct.vhd     Capa MaxPooling 2x2, con maxpool2x2 instanciado.
+src/dense_layer_struct.vhd       Capa densa generica, con MAC instanciado.
+src/cnn_top.vhd                  Integracion estructural completa.
+
+ENTIDADES INSTANCIADAS EN CNN_TOP
+---------------------------------
+u_conv1   : conv3x3_layer_struct
+u_pool1   : maxpool_layer_struct
+u_conv2   : conv3x3_layer_struct
+u_pool2   : maxpool_layer_struct
+u_dense1  : dense_layer_struct
+u_logits  : dense_layer_struct
+u_argmax  : argmax10
+
+Esto debe verse de forma mucho mas ordenada en RTL Viewer que un proceso gigante.
+
+PESOS
+-----
+La carpeta mem incluye archivos .hex dummy con ceros para que el proyecto abra y compile.
+Para usar los pesos reales del notebook, ejecuta en PowerShell:
+
+scripts\copiar_pesos_reales.ps1
+
+Si tu carpeta esta en otra ruta, edita las variables $src y $dst dentro del script.
+
+ORDEN EN QUARTUS
+----------------
+1. Abrir Parcial_CNN_FPGA_ESTRUCTURAL.qpf.
+2. Confirmar que el top-level sea cnn_top.
+3. Compilar primero solo Analysis & Synthesis.
+4. Abrir Tools -> Netlist Viewers -> RTL Viewer.
+5. Deben aparecer modulos jerarquicos: conv, pool, dense, argmax.
+
+PARA PROBAR MODULOS INDIVIDUALES EN RTL
+---------------------------------------
+Cambiar temporalmente Top-Level Entity a:
+- mac_unit
+- relu_unit
+- maxpool2x2
+- argmax10
+- conv3x3_layer_struct
+- dense_layer_struct
+
+Luego correr Analysis & Synthesis y abrir RTL Viewer.
+
+TESTBENCH CON ASSERTS
+---------------------
+Los testbench estan en sim/ y NO se agregan como archivos de sintesis del proyecto.
+Para ModelSim, desde la raiz del proyecto ejecutar:
+
+do sim/run_asserts_modelsim.do
+
+Incluye:
+- tb_mac_assert.vhd
+- tb_argmax_assert.vhd
+- tb_conv1_assert.vhd
+
+Nota: tb_conv1_assert usa los pesos dummy en cero. Si copias pesos reales,
+el assert de Conv1 debe actualizarse con el valor esperado calculado desde Python.
+
+IMPORTANTE
+----------
+Este diseño separa claramente:
+- capas entrenables: Conv1, Conv2, Dense1, Logits
+- bloques funcionales sin pesos: ReLU, MaxPooling, Flatten/direccionamiento y Argmax
+- control estructural: FSM del top que arranca capas y copia buffers
+
